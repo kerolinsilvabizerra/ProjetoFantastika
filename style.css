@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #252525;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+}
+header figure{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ffffff;
+    width: 10vw;
+}
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 10vw;
+    align-items: center;
+}
+header nav img{
+    height: 3vh;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    width: 50vw;
+    height: 20vh;
+}
+main{
+    background-color: #E75381;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh; 
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 20vw;
+    background-image: url(./assets/cachorro1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+main section div{
+    background-image: url(./assets/logo2.png);
+    background-size: 100% 100%;
+    width: 8vw;
+    height: 13vh;
+    position: relative;
+    top: 5vh;
+}
+
+@media screen and (max-width: 720px){
+    header figure{
+        justify-content: space-around;
+    }
+    header nav{
+        width: 7vw;
+    }
+    .logoWhatsapp{
+        height: 5vh;
+    }
+    .logoInsta, .logoYoutube {
+        display: none;
+    }
+    h1{
+        width: 80vw;
+        height: 20vh;
+    }
+    main section{
+        width: 55vw;
+    }
+    main section div{
+        width: 25vw;
+        height: 15vh;
+    }
+}

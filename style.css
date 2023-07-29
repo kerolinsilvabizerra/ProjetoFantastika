@@ -26,42 +26,33 @@ header nav img{
     height: 3vh;
 }
 
-h1{
-    color: #ffffff;
-    font-size: 50px;
-    text-align: center;
-    width: 50vw;
-    height: 20vh;
-}
-main{
-    background-color: #E75381;
+.primeiraSectionMain{
+    border: solid blue 2px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100vh; 
-}
-main section{
-    display: flex;
-    flex-direction: column;
     align-items:center;
     justify-content: flex-start;
-    height: 60vh;
-    width: 20vw;
+    flex-direction: column;
+    background-color: #E75381;
+    height: 80vh;
+    width: 100%;
     background-image: url(./assets/cachorro1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: bottom;
 }
-main section div{
+.logoPatinha{
     background-image: url(./assets/logo2.png);
     background-size: 100% 100%;
     width: 8vw;
     height: 13vh;
     position: relative;
-    top: 5vh;
+    top: 25vh;
 }
-
+.segundaSectionMain{
+    background-image: url(./assets/cachorro2.png);
+    background-size: 100% 100%;
+    height: 60vh;
+    
+}
 @media screen and (max-width: 720px){
     header figure{
         justify-content: space-around;
@@ -80,10 +71,14 @@ main section div{
         height: 20vh;
     }
     main section{
+        align-items: center;
         width: 55vw;
+        border:solid purple 2px;
+
     }
     main section div{
         width: 25vw;
         height: 15vh;
+        
     }
 }

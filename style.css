@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lily+Script+One&family=Roboto+Serif:opsz,wght@8..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lily+Script+One&family=Roboto+Serif:opsz@8..144&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,11 @@ header{
     height: 10vh;
 }
 header figure{
+    font-size: 13px;
+    font-weight: 900;
+    font-family:'Inter', sans-serif;
+    font-family: 'Lily Script One', cursive;
+    font-family: 'Roboto Serif', serif;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -25,34 +33,79 @@ header nav{
 header nav img{
     height: 3vh;
 }
+main{
+    font-family:'Inter', sans-serif;
+    font-family: 'Lily Script One', cursive;
+    font-family: 'Roboto Serif', serif;
+}
+h1{
+    height: 18vh;
+    width: 60vw;
+    white-space: pre-line;
+    text-align: center;
+    font-size: 45px;
+    color: #ffffff;
+}
 
 .primeiraSectionMain{
-    border: solid blue 2px;
     display: flex;
     align-items:center;
-    justify-content: flex-start;
-    flex-direction: column;
+    justify-content: center;
     background-color: #E75381;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background-image: url(./assets/cachorro1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    padding-bottom: 10vh;
 }
-.logoPatinha{
+.primeiraDivMain{
+    height: 60vh;
+    width: 60vw;
+    display: flex;
     background-image: url(./assets/logo2.png);
-    background-size: 100% 100%;
-    width: 8vw;
-    height: 13vh;
-    position: relative;
-    top: 25vh;
+    background-repeat: no-repeat;
+    background-size: 18% 27%;
+    background-position: center;
+
 }
 .segundaSectionMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F2F3;
     background-image: url(./assets/cachorro2.png);
-    background-size: 100% 100%;
-    height: 60vh;
-    
+    background-size: 70%;
+    background-position:center right;
+    background-repeat: no-repeat;
+    height: 100vh; 
 }
+.segundaDivMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vw;
+    height: 50vh;
+}
+h2{
+    font-size: 45px;
+}
+main p{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lily Script One', cursive;
+    font-family: 'Roboto Serif', serif;
+    white-space: pre-line;
+    font-size: 23px;
+}
+button {
+    font-size: 20px;
+    width: 16vw;
+    height: 8vh;
+    background-color: #3a342f;
+    color: #f4f2f3;
+    border-radius: 26px;
+    border: none;
+  }
 @media screen and (max-width: 720px){
     header figure{
         justify-content: space-around;
@@ -66,19 +119,48 @@ header nav img{
     .logoInsta, .logoYoutube {
         display: none;
     }
-    h1{
-        width: 80vw;
-        height: 20vh;
+    .primeiraSectionMain{
+        background-image: url(./assets/cachorro1Resp.png);  
     }
-    main section{
-        align-items: center;
-        width: 55vw;
-        border:solid purple 2px;
+    h1{
+        width: 100%;
+        font-size: 50px;
+    }
+    .primeiraDivMain{
+        background-size: 30% 30%;
+        width: 100%;
+    } 
+    .primeiraSectionMain{
+        padding-bottom: 20vh;
+    }
+    .segundaSectionMain{
+        background-image: url(./assets/cachorro2Resp.png);
+        align-items: flex-start;
+        justify-content: center;
+        justify-content: space-around;
+        background-size: 105%;
+        background-position:center;
+        height: 160vh;
 
     }
-    main section div{
-        width: 25vw;
-        height: 15vh;
-        
+    .segundaDivMain{
+        justify-content: space-around;
+        margin-right: 20vw;
+        width: 60vw;
+        height: 70vh;
+        margin-top: 8vh;
     }
+    main p{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    button{
+        width: 30vw;
+        height: 10vh;
+        font-weight: 600;
+        font-size: 23px;
+        border-radius: 35px;
+
+    }
+
 }

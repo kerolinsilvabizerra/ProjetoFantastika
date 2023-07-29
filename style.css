@@ -97,7 +97,7 @@ main p{
     white-space: pre-line;
     font-size: 23px;
 }
-button {
+.primeiroButton{
     font-size: 20px;
     width: 16vw;
     height: 8vh;
@@ -106,6 +106,47 @@ button {
     border-radius: 26px;
     border: none;
   }
+  .terceiraSectionMain{
+    background-image: url(./assets/cachorro3.png);
+    background-size: 100% 100%;
+    background-position:center left;
+    background-repeat: no-repeat;
+  }
+  .terceiraDivMain{
+    display: flex;
+    justify-content:center;
+    background-image: url(./assets/cachorro3.png);
+    background-size: 80% 100%;
+    background-position:center left;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center; 
+
+
+
+  }
+  .quartaDivMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: self-start;
+    width: 50vw;
+    height: 60vh;
+    padding-left: 20vw;
+}
+    
+.segundoButton{
+    font-size: 20px;
+    width: 16vw;
+    height: 8vh;
+    background-color: #3a342f;
+    color: #f4f2f3;
+    border-radius: 26px;
+    border: none;
+
+    }
+
+
 @media screen and (max-width: 720px){
     header figure{
         justify-content: space-around;
